@@ -4,16 +4,16 @@ namespace shopapp.webui.Controllers
 {
     public class ProductController:Controller
     {
-        public string Index(){
-            return "product/index";
+        public IActionResult Index(){
+            return View();
         }
 
-        public string List(){
-            return "product/list";
+        public IActionResult List(){
+            return View();
         }
 
-        public string Details(int id){
-            return "product/details "+id;
+        public IActionResult Details(int id){
+            return View();
         }
     }
 }

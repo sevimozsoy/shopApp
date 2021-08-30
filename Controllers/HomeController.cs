@@ -7,12 +7,18 @@ namespace shopapp.webui.Controllers
     //controller birden farklı action functionına sahip olabilir
     public class HomeController:Controller
     {
-        public string Index(){
-            return "home/index";
+        public IActionResult Index(){
+            return View();
         }
 
-        public string About(){
-            return "home/about";
+        public IActionResult About(){
+            return View();
+        }
+
+        public IActionResult Contact(){
+            return View(
+                "MyView"
+            );
         }
     }
 }

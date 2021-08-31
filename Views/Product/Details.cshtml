@@ -1,12 +1,18 @@
+@model shopapp.webui.Models.Product
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
 </head>
+
 <body>
-    product/details
+    <p>ürün adı : @Model.Name</p>
+    <p>ürün açıklaması: @Model.Description</p>
+    <p>ürün fiyatı: @Model.Price</p>
 </body>
+
 </html>
